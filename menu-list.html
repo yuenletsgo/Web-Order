@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ch-zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>新千葉火鍋點餐網頁</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Noto+Sans+TC:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="page__body">
+  <header>
+    <div class="header-wrap">
+    <!-- 左方資訊 START -->
+      <div class="left block">
+        <!-- 天頂Logo START -->
+        <div class="header-logo">
+          <a href="menu-list.html">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        <!-- 天頂Logo END -->
+        <div class="wrap">
+          <div class="row">新千葉火鍋</div>
+          <div class="row">新竹店</div>
+        </div>
+      </div>
+      <!-- 左方資訊 END -->
+      <!-- 桌號 START -->
+      <div class="center block">A10</div>
+      <!-- 桌號 END -->
+      <!-- 右方資訊 START -->
+      <div class="right block">
+        <div class="wrap">
+          <div class="row">
+            <img src="img/Icon/Nav/Icon/people.svg" alt="">
+            3大1小
+          </div>
+          <div class="row">
+            <img src="img/Icon/Nav/Icon/time.svg" alt="">
+            13:41
+          </div>
+        </div>
+        <div class="wrap">
+          <!-- 當有歷史點餐訊息時才出現的明細按鈕 START -->
+          <a href="order-history.html">
+            <img src="img/Icon/Nav/Icon/list.svg" alt=""><br>
+            明細
+          </a>
+          <!-- 當有歷史點餐訊息時才出現的明細按鈕 END -->
+        </div>
+      </div>
+      <!-- 右方資訊 END -->
+    </div>
+    <!-- 分類nav 不用時可拉掉 START -->
+    <nav>
+      <ul>
+        <li id="1" class="active">湯底</li>
+        <li id="2">套餐推薦</li>
+        <li id="3">牛肉</li>
+        <li id="4">豬肉</li>
+        <li id="5">海鮮</li>
+        <li id="6">配料</li>
+        <li id="7">副食</li>
+      </ul>
+    </nav>
+    <!-- 分類nav 不用時可拉掉 END -->
+  </header>
+  <div class="menu-block-list index">
+    <!-- 餐點分類區塊 START -->
+    <!-- 菜單分類名稱 START -->
+    <h2 class="label">湯底</h2>
+    <!-- 菜單分類名稱 END -->
+    <!-- 菜單單獨項目 START -->
+    <div class="menu-block-wrapper">
+      <!-- 餐點項目區塊 START -->
+      <a href="menu-detail.html" class="menu-block">
+        <!-- 左邊項目文字區塊 START -->
+        <div class="left">
+          <!-- 項目標題 START -->
+          <h3 class="title">柴魚昆布 DshiBroth</h3>
+          <!-- 項目標題 END -->
+          <!-- 項目敘述 START -->
+          <div class="p">湯底採用日本進口昆布、醬油、柴魚片、大骨以及天然蔬菜熬煮而成,天然美味、健康無負擔</div>
+          <!-- 項目敘述 END -->
+          <!-- 推薦標章 START -->
+          <div class="badge-wrap">
+              <div class="badge good">
+                <!-- icon可更改 START -->
+                <img src="../img/Icon/Like/White.svg" alt="">
+                <!-- icon可更改 END -->
+                推薦
+              </div>
+          </div>
+          <!-- 推薦標章 END -->
+          <!-- 註明事項區塊 START -->
+          <div class="badge-wrap">
+            <div class="badge check">
+              <!-- icon可更改 START -->
+              <img src="../img/Icon/Check/Green.svg" alt="">
+              <!-- icon可更改 END -->
+              豬肉來源:台灣
+            </div>
+            <div class="badge warning">
+              <!-- icon可更改 START -->
+              <img src="../img/Icon/Check/Yellow.svg" alt="">
+              <!-- icon可更改 END -->
+              蛋奶素
+            </div>
+          </div>
+          <!-- 註明事項區塊 END -->
+          <!-- 價格區塊 START -->
+            <!-- 價格正常樣式 START -->
+            <div class="price">$49</div>
+            <!-- 價格正常樣式 END -->
+            <!-- 價格特價樣式 START -->
+            <div class="price">
+              <div class="discount">$49</div>
+              <div class="new-price">$0</div>
+            </div>
+            <!-- 價格特價樣式 END-->
+          <!-- 價格區塊 END -->
+        </div>
+        <!-- 左邊項目文字區塊 END -->
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** START -->
+        <div class="right">
+          <!-- 圖片區塊 START -->
+          <div class="img">
+            <img src="../img/Lists/List/Photo/Menu/Cove-1.png" alt="">
+          </div>
+          <!-- 圖片區塊 END -->
+          <!-- 放入購物車數量數字區塊 START -->
+          <div class="number">1</div>
+          <!-- 放入購物車數量數字區塊 END -->
+        </div>
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** END -->
+      </a>
+      <!-- 餐點項目區塊 END -->
+      
+      <!-- 餐點項目區塊 START -->
+      <a href="menu-detail.html" class="menu-block">
+        <!-- 左邊項目文字區塊 START -->
+        <div class="left">
+          <!-- 項目標題 START -->
+          <h3 class="title">蔬十素食 Vegetarin</h3>
+          <!-- 項目標題 END -->
+          <!-- 項目敘述 START -->
+          <div class="p">以白蘿蔔、紅蘿蔔、香菇以及高麗菜熬煮而成,讓香氣豐富且甘甜清香</div>
+          <!-- 項目敘述 END -->
+          <!-- 價格區塊 START -->
+            <!-- 價格正常樣式 START -->
+            <div class="price">$49</div>
+            <!-- 價格正常樣式 END -->
+          <!-- 價格區塊 END -->
+        </div>
+        <!-- 左邊項目文字區塊 END -->
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** START -->
+        <div class="right">
+          <!-- 放入購物車數量數字區塊 START -->
+          <div class="number">1</div>
+          <!-- 放入購物車數量數字區塊 END -->
+        </div>
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** END -->
+      </a>
+      <!-- 餐點項目區塊 END -->
+      
+      <!-- 餐點項目區塊 START -->
+       <a href="menu-detail.html" class="menu-block">
+        <!-- 左邊項目文字區塊 START -->
+        <div class="left">
+          <!-- 項目標題 START -->
+          <h3 class="title">黃金南瓜 Pumpkin</h3>
+          <!-- 項目標題 END -->
+          <!-- 項目敘述 START -->
+          <div class="p"></div>
+          <!-- 項目敘述 END -->
+          <!-- 註明事項區塊 START -->
+          <div class="badge-wrap">
+            <div class="badge warning">
+              <!-- icon可更改 START -->
+              <img src="../img/Icon/Check/Yellow.svg" alt="">
+              <!-- icon可更改 END -->
+              蛋奶素
+            </div>
+          </div>
+          <!-- 註明事項區塊 END -->
+          <!-- 價格區塊 START -->
+            <!-- 價格正常樣式 START -->
+            <div class="price">$49</div>
+            <!-- 價格正常樣式 END -->
+          <!-- 價格區塊 END -->
+        </div>
+        <!-- 左邊項目文字區塊 END -->
+      </a>     
+      <!-- 餐點項目區塊 END -->
+      
+      <!-- 餐點項目區塊 START -->
+      <a href="menu-detail.html" class="menu-block disabled">
+        <!-- 左邊項目文字區塊 START -->
+        <div class="left">
+          <!-- 項目標題 START -->
+          <h3 class="title">柴魚昆布 DshiBroth</h3>
+          <!-- 項目標題 END -->
+          <!-- 項目敘述 START -->
+          <div class="p">湯底採用日本進口昆布、醬油、柴魚片、大骨以及天然蔬菜熬煮而成,天然美味、健康無負擔</div>
+          <!-- 項目敘述 END -->
+          <!-- 註明事項區塊 START -->
+          <div class="badge-wrap">
+            <div class="badge check">
+              <!-- icon可更改 START -->
+              <img src="../img/Icon/Check/Green.svg" alt="">
+              <!-- icon可更改 END -->
+              豬肉來源:台灣
+            </div>
+          </div>
+          <!-- 註明事項區塊 END -->
+          <!-- 價格區塊 START -->
+            <!-- 價格售完樣式 START -->
+            <div class="price"><img src="img/Icon/Cross.svg" alt=""> 暫無供應</div>
+            <!-- 價格售完樣式 END -->
+          <!-- 價格區塊 END -->
+        </div>
+        <!-- 左邊項目文字區塊 END -->
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** START -->
+        <div class="right">
+          <!-- 圖片區塊 START -->
+          <div class="img">
+            <img src="../img/Lists/List/Photo/Menu/Cove-1.png" alt="">
+          </div>
+          <!-- 圖片區塊 END -->
+        </div>
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** END -->
+      </a>
+      <!-- 餐點項目區塊 END -->
+    </div>
+    <!-- 餐點分類區塊 END -->
+    
+    <!-- 餐點分類區塊 START -->
+    <!-- 菜單分類名稱 START -->
+    <h2 class="label">牛肉</h2>
+    <!-- 菜單分類名稱 END -->
+    <!-- 菜單單獨項目 START -->
+    <div class="menu-block-wrapper">
+      <!-- 餐點項目區塊 START -->
+      <a href="menu-detail.html" class="menu-block">
+        <!-- 左邊項目文字區塊 START -->
+        <div class="left">
+          <!-- 項目標題 START -->
+          <h3 class="title">澳洲4A和牛 4A Wagyu Beef</h3>
+          <!-- 項目標題 END -->
+          <!-- 註明事項區塊 START -->
+          <div class="badge-wrap">
+            <div class="badge warning">
+              6盎司
+            </div>
+          </div>
+          <!-- 註明事項區塊 END -->
+          <!-- 價格區塊 START -->
+            <!-- 價格正常樣式 START -->
+            <div class="price">$588</div>
+            <!-- 價格正常樣式 END -->
+          <!-- 價格區塊 END -->
+        </div>
+        <!-- 左邊項目文字區塊 END -->
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** START -->
+        <div class="right">
+          <!-- 圖片區塊 START -->
+          <div class="img">
+            <img src="../img/Lists/List/Photo/Menu/Cove-2.png" alt="">
+          </div>
+          <!-- 圖片區塊 END -->
+        </div>
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** END -->
+      </a>
+      <!-- 餐點項目區塊 END -->
+      
+      <!-- 餐點項目區塊 START -->
+       <a href="menu-detail.html" class="menu-block">
+        <!-- 左邊項目文字區塊 START -->
+        <div class="left">
+          <!-- 項目標題 START -->
+          <h3 class="title">大和五花牛</h3>
+          <!-- 項目標題 END -->
+          <!-- 價格區塊 START -->
+            <!-- 價格特價樣式 START -->
+            <div class="price">
+              <div class="discount">$499</div>
+              <div class="new-price">$238</div>
+            </div>
+            <!-- 價格特價樣式 END-->
+          <!-- 價格區塊 END -->
+        </div>
+        <!-- 左邊項目文字區塊 END -->
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** START -->
+        <div class="right">
+          <!-- 圖片區塊 START -->
+          <div class="img">
+            <img src="../img/Lists/List/Photo/Menu/Cove-3.png" alt="">
+          </div>
+          <!-- 圖片區塊 END -->
+        </div>
+        <!-- 右邊區塊 ****如果沒有內容要拔掉**** END -->        
+      </a>     
+      <!-- 餐點項目區塊 END -->
+      
+    </div>
+    <!-- 餐點分類區塊 END -->
+  </div> 
+   <!-- 檢視購物車按鈕 ****若購物車有項目才需出現**** START -->
+  <a href="cart.html" class="full-btn" style="position: fixed;">
+    查看購物車．已放入 <span class="cart-quality">2</span> 品項
+  </a>
+  <!-- 檢視購物車按鈕 ****若購物車有項目才需出現**** END -->
+</body>
+
+<script type="text/javascript" src="js/script.min.js"></script>
+</html>

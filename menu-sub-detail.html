@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ch-zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>新千葉火鍋點餐網頁</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Noto+Sans+TC:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+  <body class="page__body max-body">
+    <header>
+    <div class="header-wrap">
+      <!-- 左方資訊 START -->
+        <div class="left block">
+          <!-- 天頂Logo START -->
+          <div class="header-logo">
+            <a href="menu-list.html">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <!-- 天頂Logo END -->
+          <div class="wrap">
+            <div class="row">新千葉火鍋</div>
+            <div class="row">新竹店</div>
+          </div>
+        </div>
+        <!-- 左方資訊 END -->
+        <!-- 桌號 START -->
+        <div class="center block">A10</div>
+        <!-- 桌號 END -->
+        <!-- 右方資訊 START -->
+        <div class="right block">
+          <div class="wrap">
+            <div class="row">
+              <img src="img/Icon/Nav/Icon/people.svg" alt="">
+              3大1小
+            </div>
+            <div class="row">
+              <img src="img/Icon/Nav/Icon/time.svg" alt="">
+              13:41
+            </div>
+          </div>
+          <div class="wrap">
+            <!-- 當有歷史點餐訊息時才出現的明細按鈕 START -->
+            <a href="order-history.html">
+              <img src="img/Icon/Nav/Icon/list.svg" alt=""><br>
+              明細
+            </a>
+            <!-- 當有歷史點餐訊息時才出現的明細按鈕 END -->
+          </div>
+        </div>
+        <!-- 右方資訊 END -->
+      </div>
+    </header>
+    <div class="sub-detail-info m-auto">
+      <!-- 項目標題 START -->
+      <h3 class="title">拿鐵</h3>
+      <!-- 項目標題 END -->
+    </div>
+    <form id="sub-list" class="list" style="padding-bottom: 82px;">
+      <fieldset>
+        <legend>冰塊</legend>
+        <!-- 非必選可隱藏 START -->
+        <label class="note">必選</label>    
+        <!-- 非必選可隱藏 END -->
+        <div class="input-wrap">
+          <input type="radio" name="radSize" id="sizeSmall" value="small">
+          <label for="sizeSmall">熱飲</label>
+        </div>
+        
+        <div class="input-wrap">
+          <input type="radio" name="radSize" id="sizeMed" value="medium">
+          <label for="sizeMed">正常冰</label>
+        </div>
+        
+        <!-- Disabled 樣式 加上class disabled START -->
+        <div class="input-wrap disabled">
+          <input type="radio" name="radSize" id="sizeLarge" value="large">
+          <label for="sizeLarge">少冰</label>
+        </div>
+      </fieldset>
+      <!-- 多選區塊 START -->
+      <fieldset>
+        <legend>加大</legend>
+        <!-- 非必選可隱藏 START -->
+        <label class="note">加選項目</label>    
+        <!-- 非必選可隱藏 END -->
+        <div class="input-wrap">
+          <input type="radio" name="radioo" id="one-1" value="item-1">
+          <label for="one-1">
+            升級 大杯500ml
+            <div class="price">+ $10</div>
+          </label>
+        </div>
+        
+        <div class="input-wrap">
+          <input type="radio" name="radioo" id="two-2" value="item-2">
+          <label for="two-2">升級 特大杯(750ml)
+            <div class="price">+ $20</div>
+          </label>
+        </div>
+      </fieldset>  
+      <!-- 多選區塊 END -->
+    </form>
+    <!-- 加入購物車按鈕區塊 ****不能選擇時加入class disabled**** START -->
+    <a href="menu-detail.html" class="add-to-cart-btn">
+      <div class="btn">確認</div>
+    </a>
+    <!-- 加入購物車按鈕區塊 ****不能選擇時加入class disabled**** END -->
+  </body>
+  
+  <script type="text/javascript" src="js/script.min.js"></script>
+</html>

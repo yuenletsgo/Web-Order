@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ch-zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>新千葉火鍋點餐網頁</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Noto+Sans+TC:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+  <body class="page__body max-body">
+    <header>
+      <div class="header-wrap">
+      <!-- 左方資訊 START -->
+        <div class="left block">
+          <!-- 天頂Logo START -->
+          <div class="header-logo">
+            <a href="menu-list.html">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <!-- 天頂Logo END -->
+          <div class="wrap">
+            <div class="row">新竹店</div>
+            <div class="row">AA00314</div>
+          </div>
+        </div>
+        <!-- 左方資訊 END -->
+        <!-- 桌號 START -->
+        <div class="center block">A01</div>
+        <!-- 桌號 END -->
+        <!-- 右方資訊 START -->
+        <div class="right block">
+          <div class="wrap">
+            <a href="stuff-table-detail.html">
+              <img src="img/Icon/Nav/Icon/info.svg" alt=""><br>
+              餐桌資訊
+            </a>
+          </div>
+          <div class="wrap">
+            <!-- 當有歷史點餐訊息時才出現的明細按鈕 START -->
+            <a href="stuff-login.html">
+              <img src="img/Icon/Nav/Icon/logout.svg" alt=""><br>
+              登出
+            </a>
+            <!-- 當有歷史點餐訊息時才出現的明細按鈕 END -->
+          </div>
+        </div>
+        <!-- 右方資訊 END -->
+      </div>
+    </header>
+    <div class="cart m-auto">
+      <p class="title">入座時間 13:41 PM<br>已點餐點清單</p>
+      <!-- 清單區塊 START -->
+      <div class="fieldset">
+        <div class="edit-wrap">
+          <a href="stuff-table-order-edit.html" class="input-wrap">
+            <!-- 放入購物車數量數字區塊 START -->
+            <div class="number">1</div>
+            <!-- 放入購物車數量數字區塊 END -->
+            <div class="label-wrap">
+              <label for="coffee">拿鐵</label>
+              <!-- 項目敘述 START -->
+              <div class="p">熱飲．無糖．升級 大杯(500ml)<br>
+              <b>備註</b><br>
+              "不加芋頭"
+              </div>
+              <!-- 項目敘述 END -->
+            </div>
+            <div class="price">+ $10</div>
+          </a>
+          <div class="action-wrap">
+            <div class="copy"><img src="../img/Icon/copy.svg" alt=""></div>
+            <div class="delete"><img src="../img/Icon/trash.svg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="edit-wrap">
+          <a href="stuff-table-order-edit.html" class="input-wrap">
+            <!-- 放入購物車數量數字區塊 START -->
+            <div class="number">1</div>
+            <!-- 放入購物車數量數字區塊 END -->
+            <div class="label-wrap">
+              <label for="coffee">拿鐵</label>
+            </div>
+            <div class="price">+ $10</div>
+          </a>
+          <div class="action-wrap">
+            <div class="copy"><img src="../img/Icon/copy.svg" alt=""></div>
+            <div class="delete"><img src="../img/Icon/trash.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="edit-wrap">
+          <a href="javascript:void(0)" class="input-wrap cancel">
+            <!-- 放入購物車數量數字區塊 START -->
+            <div class="number">1</div>
+            <!-- 放入購物車數量數字區塊 END -->
+            <div class="label-wrap">
+              <label for="coffee">拿鐵</label>
+            </div>
+            <div class="price">
+              <div class="discount">$29</div>            
+              <div class="new-price">$10</div>
+            </div>
+          </a>
+          <div class="action-wrap">
+            <div class="copy"></div>
+            <div class="delete"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 清單區塊 END -->
+      <div class="price sub-total stuff-edit">小計 <span class="sub-number">$388</span></div>
+    </div>
+    <div class="cart-bottom-wrap">
+      <!-- 送出按鈕 START -->
+      <a href="menu-list.html" class="full-btn white-btn">
+        繼續加點
+      </a>
+      <!-- 送出按鈕 END -->
+      <!-- 備註區塊 START -->
+      <div class="fieldset note">
+        <legend>備註</legend>
+        <textarea placeholder="是否有其他備註">9:41 全都不加蔥花</textarea>
+      </div>
+      <!-- 備註區塊 END -->
+      <!-- 送出按鈕 START -->
+      <a href="stuff-index.html" class="full-btn">
+        確認餐點
+      </a>
+      <!-- 送出按鈕 END -->
+    </div>
+  </body>
+  
+  <script type="text/javascript" src="js/script.min.js"></script>
+</html>

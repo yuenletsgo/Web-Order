@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ch-zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>新千葉火鍋點餐網頁</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Noto+Sans+TC:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+  <body class="page__body max-body">
+    <header>
+      <div class="header-wrap">
+        <!-- 左方資訊 START -->
+          <div class="left block">
+            <!-- 天頂Logo START -->
+            <div class="header-logo">
+            <a href="menu-list.html">
+              <img src="img/logo.png" alt="">
+            </a>
+            </div>
+            <!-- 天頂Logo END -->
+            <div class="wrap">
+              <div class="row">新千葉火鍋</div>
+              <div class="row">新竹店</div>
+            </div>
+          </div>
+          <!-- 左方資訊 END -->
+          <!-- 桌號 START -->
+          <div class="center block">A10</div>
+          <!-- 桌號 END -->
+          <!-- 右方資訊 START -->
+          <div class="right block">
+            <div class="wrap">
+              <div class="row">
+                <img src="img/Icon/Nav/Icon/people.svg" alt="">
+                3大1小
+              </div>
+              <div class="row">
+                <img src="img/Icon/Nav/Icon/time.svg" alt="">
+                13:41
+              </div>
+            </div>
+          <!-- 右方資訊 END -->
+        </div>
+    </div></header>
+    <div class="cart m-auto">
+      <!-- 項目標題 START -->
+      <h3 class="title red center">已點餐點明細</h3>
+      <!-- 項目標題 END -->
+      <!-- 清單區塊 START -->
+      <div class="fieldset">
+        <a href="javascript:void(0)" class="input-wrap">
+          <!-- 放入購物車數量數字區塊 START -->
+          <div class="number">1</div>
+          <!-- 放入購物車數量數字區塊 END -->
+          <div class="label-wrap">
+            <label for="coffee">拿鐵</label>
+            <!-- 項目敘述 START -->
+            <div class="p">熱飲．無糖．升級 大杯(500ml)<br>
+            <b>備註</b><br>
+            "不加芋頭"
+            </div>
+            <!-- 項目敘述 END -->
+          </div>
+          <div class="price">$10</div>
+        </a>
+        
+        <a href="javascript:void(0)" class="input-wrap">
+          <!-- 放入購物車數量數字區塊 START -->
+          <div class="number">1</div>
+          <!-- 放入購物車數量數字區塊 END -->
+          <div class="label-wrap">
+            <label for="coffee">牛五花固定套餐</label>
+          </div>
+          <div class="price">
+            <div class="discount">$599</div>            
+            <div class="new-price">$378</div>
+          </div>
+        </a>
+        
+        <!-- 已被取消餐點 加上class cancel START -->
+        <a href="javascript:void(0)" class="input-wrap cancel">
+          <!-- 放入購物車數量數字區塊 START -->
+          <div class="number">1</div>
+          <!-- 放入購物車數量數字區塊 END -->
+          <div class="label-wrap">
+            <label for="coffee">拿鐵</label>
+          </div>
+          <div class="price">
+            <div class="discount">$29</div>            
+            <div class="new-price">$10</div>
+          </div>
+        </a>
+        <!-- 已被取消餐點 加上class cancel END -->
+      </div>
+      <!-- 清單區塊 END -->
+      <div class="price sub-total">小計 <span class="sub-number">$388</span></div>
+    </div>
+    <div class="cart-bottom-wrap">
+     <!-- 備註區塊 ****加上readonly**** START -->
+      <div class="fieldset note">
+        <textarea readonly="" placeholder="是否有其他備註">備註：&#13;&#10;9:41 全部不要加蔥花</textarea>
+      </div>
+      <!-- 備註區塊 ****加上readonly**** END -->
+      <!-- 送出按鈕 START -->
+      <a href="menu-list.html" .html"="" class="full-btn">
+        繼續加點
+      </a>
+      <!-- 送出按鈕 END -->
+    </div>
+  </body>
+  
+  <script type="text/javascript" src="js/script.min.js"></script>
+</html>

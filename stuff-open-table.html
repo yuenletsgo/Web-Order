@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ch-zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>新千葉火鍋點餐網頁</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+  <body class="page__body max-body stuff">
+    <header>
+      <div class="header-wrap">
+      <!-- 左方資訊 START -->
+        <div class="left block">
+          <!-- 天頂Logo START -->
+          <div class="header-logo">
+            <a href="menu-list.html">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <!-- 天頂Logo END -->
+          <div class="wrap">
+            <div class="row">新竹店</div>
+            <div class="row">AA00314</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="table-detail m-auto">
+      <!-- 標題 START -->
+      <div class="table-detail-title-wrap">
+        <h3 class="title red center">開桌</h3>
+        <div class="table-name">A01</div>
+        <p class="center">2021/06/04</p>
+      </div>
+      <!-- 標題 END -->
+      <!-- 選項區塊樣式 START -->
+      <form id="open_table" class="table-detail-form">
+        
+        <!-- 編輯區塊 START -->
+        <fieldset>
+          <div class="date-wrap">
+            <input id="time" class="flatpickr flatpickr-input active" type="text" placeholder="Select Date.." data-id="time" readonly="readonly">
+          </div>
+          <h3 class="title red center">大人</h3>
+          <!-- 數量區塊 START -->
+          <div class="quality-wrap">
+            <div class="quality-btn minus stuff-m">-</div>
+              <input id="adult" class="quality" disabled="" type="number" value="1">
+            <div class="quality-btn plus">+</div>
+          </div>
+          <!-- 數量區塊 END -->
+          <h3 class="title red center">小孩</h3>
+          <!-- 數量區塊 START -->
+          <div class="quality-wrap">
+            <div class="quality-btn minus stuff-m">-</div>
+              <input id="child" class="quality" disabled="" type="number" value="0">
+            <div class="quality-btn plus">+</div>
+          </div>
+          <!-- 數量區塊 END -->
+        </fieldset>
+        <!-- 編輯區塊 END -->
+      </form>
+      <!-- 選項區塊樣式 END -->
+      <!-- 更新購物車按鈕區塊 ****不能選擇時加入class disabled**** START -->
+      <a href="stuff-index.html" class="full-btn static">
+        開桌
+      </a>
+      <!-- 更新購物車按鈕區塊 ****不能選擇時加入class disabled**** END -->
+      <!-- 刪除按鈕 START -->
+      <a href="stuff-reserve-table.html" class="full-btn outline static">
+        保留
+      </a>
+      <!-- 刪除按鈕 END -->
+    </div>
+  </body>
+  
+  <script type="text/javascript" src="js/script.min.js"></script>
+</html>
