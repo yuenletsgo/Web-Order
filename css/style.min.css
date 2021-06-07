@@ -1383,6 +1383,11 @@ input:disabled + label {
   font-size: 14px;
   letter-spacing: 0.1em;
 }
+@media (max-width: 400px) {
+  .all-tables .table-wrap .table {
+    margin: 1.5rem 0.5rem;
+  }
+}
 .all-tables .table-wrap .table.timesup {
   position: relative;
 }
